@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=3 uid="uid://dw04eaigylnyu"]
+
+[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://panel_theme.tres" id="1_4rj41"]
+[ext_resource type="Texture2D" uid="uid://cboeqr2xqcktv" path="res://assets/girl_character.png" id="2_xg6tl"]
+[ext_resource type="FontFile" uid="uid://covlvfdvms61s" path="res://Inconsolata/InconsolataNerdFont-Regular.ttf" id="3_viour"]
+[ext_resource type="FontFile" uid="uid://hvmxxp6vl14u" path="res://Inconsolata/InconsolataNerdFont-Bold.ttf" id="4_ksic5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_e0x3w"]
+font = ExtResource("3_viour")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_orhqa"]
+font = ExtResource("4_ksic5")
+font_size = 56
+font_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.12549)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_4rj41")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("2_xg6tl")
+
+[node name="Label" type="Label" parent="Panel/HBoxContainer/TextureRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -48.0
+offset_top = -40.0
+offset_right = 48.0
+offset_bottom = -5.0
+grow_horizontal = 2
+text = "Ximena"
+label_settings = SubResource("LabelSettings_e0x3w")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -140.0
+offset_top = 5.0
+offset_right = 140.0
+offset_bottom = 65.0
+grow_horizontal = 2
+text = "Costa Rica"
+label_settings = SubResource("LabelSettings_orhqa")

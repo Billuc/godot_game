@@ -1,0 +1,30 @@
+[
+    {
+        "from": "Costa Rica",
+        "to": "Paris",
+        "type": "Avion",
+        "indication": "Retour à la réalité"
+    },
+    {
+        "from": "Paris",
+        "to": "Costa Rica",
+        "type": "Avion",
+        "indication": "C'est les vacances !"
+    },
+    {
+        "from": "Paris",
+        "to": "Dambelin",
+        "type": "Train",
+        "indication": "Vers l'Est"
+    },
+    {
+        "from": "Dambelin",
+        "to": "Paris",
+        "type": "Train",
+        "indication": "Vers l'Ouest"
+    },
+    {
+        "from": "Paris",
+        "to": "Nord de la France"
+    }
+]
