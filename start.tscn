@@ -1,18 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://e0g2mwcrmlmf"]
+[gd_scene load_steps=7 format=3 uid="uid://oo4jpmacl1tr"]
 
-[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://panel_theme.tres" id="1_2k84a"]
-[ext_resource type="FontFile" uid="uid://hvmxxp6vl14u" path="res://Inconsolata/InconsolataNerdFont-Bold.ttf" id="1_hwik2"]
-[ext_resource type="Theme" uid="uid://d8xym1c3gkbf" path="res://button_theme.tres" id="3_ke51r"]
-[ext_resource type="Texture2D" uid="uid://0tkvmhfvgcs0" path="res://assets/play.png" id="4_q7y88"]
-[ext_resource type="Script" path="res://PlayButton.cs" id="5_isovj"]
-[ext_resource type="Script" path="res://SceneTransitionRect.cs" id="6_iwkc3"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_linww"]
-font = ExtResource("1_hwik2")
-font_size = 46
-font_color = Color(0, 0, 0, 1)
-shadow_size = 4
-shadow_color = Color(1, 1, 1, 0.133333)
+[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://panel_theme.tres" id="1_xithb"]
+[ext_resource type="Texture2D" uid="uid://cboeqr2xqcktv" path="res://assets/girl_character.png" id="2_1kcy4"]
+[ext_resource type="Script" path="res://SceneTransitionRect.cs" id="3_orehh"]
 
 [sub_resource type="Animation" id="Animation_kge0x"]
 resource_name = "fade"
@@ -66,32 +56,22 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_2k84a")
+theme = ExtResource("1_xithb")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 64
 alignment = 1
 
-[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="Panel/HBoxContainer"]
 layout_mode = 2
-text = "Find Your BoyFriend - The Game"
-label_settings = SubResource("LabelSettings_linww")
-horizontal_alignment = 1
-
-[node name="Button" type="Button" parent="Panel/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_stretch_ratio = 0.0
-theme = ExtResource("3_ke51r")
-text = "Play"
-icon = ExtResource("4_q7y88")
-script = ExtResource("5_isovj")
+size_flags_vertical = 4
+texture = ExtResource("2_1kcy4")
+stretch_mode = 5
 
 [node name="SceneTransitionRect" type="ColorRect" parent="."]
 modulate = Color(0, 0, 0, 0)
@@ -103,7 +83,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
-script = ExtResource("6_iwkc3")
+script = ExtResource("3_orehh")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="SceneTransitionRect"]
 libraries = {
