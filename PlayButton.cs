@@ -15,6 +15,6 @@ public partial class PlayButton : Button
 	
 	private async void OnPressed()
 	{
-		await _transitionRect.TransitionTo("res://start.tscn");
+		await _transitionRect.TransitionTo("res://place.tscn");
 	}
 }

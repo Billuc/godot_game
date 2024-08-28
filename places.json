@@ -1,56 +1,56 @@
 [
-    {
-        "name": "Costa Rica",
-        "character": "Phone",
-        "interaction": "Luc - Whatsapp\n\nCoucou, mon weekend avec ma famille se passe bien !\nFais bon vol\nOn se voit bientôt ;)"
-    },
-    {
-        "name": "Paris"
-    },
-    {
-        "name": "Dambelin",
-        "character": "Laurent",
-        "interaction": "Salut Ximena, comment vas-tu ?\nComment était le Costa Rica ?\nLuc ? Non il n'est pas là !\nTu sais les autres sont tous partis dans le Nord..."
-    },
-    {
-        "name": "Nord de la France",
-        "character": "Lou",
-        "interaction": "Coucou Ximena, ca va ?\nRegarde mes nouvelles chaussures !!!\nEt mon cadeau du Costa Rica c'est le meilleur, hein ?\nQuoi ? Luc ? Non, il est pas là, c'est plus le weekend donc il travaille."
-    },
-    {
-        "name": "Lyon Part-Dieu"
-    },
-    {
-        "name": "La Doua / Creatis",
-        "character": "Horloge",
-        "interaction": "L'horloge indique 18h.\nLuc doit déjà avoir fini de travailler...\nIl me semble que Benjamin m'avait dit que Luc passerait peut-être."
-    },
-    {
-        "name": "Beauvisage CISL",
-        "character": "Benjamin",
-        "interaction": "Salut ! Ca va ? C'était bien ?\nQu'est-ce que tu fais la ?\nTu cherches Luc ? Ah nan, il est pas venu, il m'a dit qu'il irait surement faire de l'escalade."
-    },
-    {
-        "name": "Laennec",
-        "character": "Salle d'escalade",
-        "interaction": "Tu tournes dans la salle pendant 15min mais aucun signe de Luc...\nIl doit être rentré entre temps..."
-    },
-    {
-        "name": "Valmy",
-        "character": "Bastien",
-        "interaction": "Salut ! Comment ca va ? Merci pour les cadeaux <3\nEt je suis désolé pour les basilics qui ont seché...\nNan je sais pas où est Luc mais les 6-2 ont dit qu'ils iraient boire un coup à Hotel de Ville\nTu peux aller voir là bas au pire !"
-    },
-    {
-        "name": "Bellecour"
-    },
-    {
-        "name": "Hotel de Ville",
-        "character": "Les 6-2",
-        "interaction": "Coucou !!! Comment va ? Raconte nous comment c'était !\nTu viens boire avec nous ? Ah non tu cherches Luc !\nIl nous a dit qu'il allait à un resto ce soir avec toi, apparemment tu saurais lequel..."
-    },
-    {
-        "name": "Gio Gio",
-        "character": "Luc",
-        "interaction": "Salut mon amour ! Ca va ?\nBravo, tu m'as trouvé :D\nTu as gagné une invitation à Gio Gio quand tu veux !\nJe t'aime <3"
-    }
+	{
+		"name": "Costa Rica",
+		"character": "Phone",
+		"interaction": "Luc - Whatsapp\n\nCoucou, mon weekend avec ma famille se passe bien !\nFais bon vol\nOn se voit bientôt ;)"
+	},
+	{
+		"name": "Paris"
+	},
+	{
+		"name": "Dambelin",
+		"character": "Laurent",
+		"interaction": "Salut Ximena, comment vas-tu ?\nComment était le Costa Rica ?\nLuc ? Non il n'est pas là !\nTu sais les autres sont tous partis dans le Nord..."
+	},
+	{
+		"name": "Nord de la France",
+		"character": "Lou",
+		"interaction": "Coucou Ximena, ca va ?\nRegarde mes nouvelles chaussures !!!\nEt mon cadeau du Costa Rica c'est le meilleur, hein ?\nQuoi ? Luc ? Non, il est pas là, c'est plus le weekend donc il travaille."
+	},
+	{
+		"name": "Lyon Part-Dieu"
+	},
+	{
+		"name": "La Doua / Creatis",
+		"character": "Horloge",
+		"interaction": "L'horloge indique 18h.\nLuc doit déjà avoir fini de travailler...\nIl me semble que Benjamin m'avait dit que Luc passerait peut-être."
+	},
+	{
+		"name": "Beauvisage CISL",
+		"character": "Benjamin",
+		"interaction": "Salut ! Ca va ? C'était bien ?\nQu'est-ce que tu fais la ?\nTu cherches Luc ? Ah nan, il est pas venu, il m'a dit qu'il irait surement faire de l'escalade."
+	},
+	{
+		"name": "Laennec",
+		"character": "Salle d'escalade",
+		"interaction": "Tu tournes dans la salle pendant 15min mais aucun signe de Luc...\nIl doit être rentré entre temps..."
+	},
+	{
+		"name": "Valmy",
+		"character": "Bastien",
+		"interaction": "Salut ! Comment ca va ? Merci pour les cadeaux <3\nEt je suis désolé pour les basilics qui ont seché...\nNan je sais pas où est Luc mais les 6-2 ont dit qu'ils iraient boire un coup à Hotel de Ville\nTu peux aller voir là bas au pire !"
+	},
+	{
+		"name": "Bellecour"
+	},
+	{
+		"name": "Hotel de Ville",
+		"character": "Les 6-2",
+		"interaction": "Coucou !!! Comment va ? Raconte nous comment c'était !\nTu viens boire avec nous ? Ah non tu cherches Luc !\nIl nous a dit qu'il allait à un resto ce soir avec toi, apparemment tu saurais lequel..."
+	},
+	{
+		"name": "Gio Gio",
+		"character": "Luc",
+		"interaction": "Salut mon amour ! Ca va ?\nBravo, tu m'as trouvé :D\nTu as gagné une invitation à Gio Gio quand tu veux !\nJe t'aime <3"
+	}
 ]
