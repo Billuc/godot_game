@@ -2,8 +2,8 @@
 
 [ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://panel_theme.tres" id="1_4rj41"]
 [ext_resource type="Script" path="res://PlaceScene.cs" id="1_c0fwr"]
-[ext_resource type="Texture2D" uid="uid://cboeqr2xqcktv" path="res://assets/girl_character.png" id="2_xg6tl"]
 [ext_resource type="FontFile" uid="uid://covlvfdvms61s" path="res://Inconsolata/InconsolataNerdFont-Regular.ttf" id="3_viour"]
+[ext_resource type="Texture2D" uid="uid://xcqdn7jly4w0" path="res://assets/Ximena.png" id="4_02up1"]
 [ext_resource type="FontFile" uid="uid://hvmxxp6vl14u" path="res://Inconsolata/InconsolataNerdFont-Bold.ttf" id="4_ksic5"]
 [ext_resource type="Texture2D" uid="uid://c54mu14v661hv" path="res://assets/boy_character.png" id="5_ejpn2"]
 [ext_resource type="Texture2D" uid="uid://bdlqwgga75kxa" path="res://assets/speech_bubble.png" id="6_0et3l"]
@@ -21,11 +21,6 @@ shadow_size = 2
 shadow_color = Color(0, 0, 0, 0.12549)
 
 [sub_resource type="LabelSettings" id="LabelSettings_e0x3w"]
-font = ExtResource("3_viour")
-font_size = 32
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_yj2pu"]
 font = ExtResource("3_viour")
 font_size = 32
 font_color = Color(0, 0, 0, 1)
@@ -66,6 +61,11 @@ _data = {
 "RESET": SubResource("Animation_672yf"),
 "show": SubResource("Animation_a7pwv")
 }
+
+[sub_resource type="LabelSettings" id="LabelSettings_yj2pu"]
+font = ExtResource("3_viour")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_de0t2"]
 length = 0.001
@@ -137,79 +137,32 @@ label_settings = SubResource("LabelSettings_orhqa")
 horizontal_alignment = 1
 
 [node name="Ximena" type="TextureRect" parent="Panel"]
-layout_mode = 2
-offset_left = 128.0
-offset_top = 240.0
-offset_right = 267.0
-offset_bottom = 588.0
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 118.0
+offset_top = -408.0
+offset_right = 257.0
+offset_bottom = -60.0
+grow_vertical = 0
 size_flags_vertical = 4
-texture = ExtResource("2_xg6tl")
+texture = ExtResource("4_02up1")
 
 [node name="XimenaName" type="Label" parent="Panel/Ximena"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -48.0
-offset_top = -40.0
-offset_right = 48.0
+offset_left = -78.5
+offset_top = -83.0
+offset_right = 60.5
 offset_bottom = -5.0
 grow_horizontal = 2
 text = "Ximena"
 label_settings = SubResource("LabelSettings_e0x3w")
-
-[node name="Char2" type="TextureRect" parent="Panel"]
-layout_mode = 2
-offset_left = 370.0
-offset_top = 240.0
-offset_right = 509.0
-offset_bottom = 588.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture = ExtResource("5_ejpn2")
-stretch_mode = 3
-
-[node name="SpeechBubble" type="TextureRect" parent="Panel/Char2"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_top = -152.0
-offset_right = 591.0
-offset_bottom = 48.0
-grow_horizontal = 0
-texture = ExtResource("6_0et3l")
-
-[node name="DialogText" type="Label" parent="Panel/Char2/SpeechBubble"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -254.5
-offset_top = -77.0
-offset_right = 265.5
-offset_bottom = 67.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "Hello"
-label_settings = ExtResource("8_uu3ef")
+horizontal_alignment = 1
 autowrap_mode = 2
-
-[node name="Char2Name" type="Label" parent="Panel/Char2"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -24.5
-offset_top = -40.0
-offset_right = 23.5
-offset_bottom = -5.0
-grow_horizontal = 2
-text = "Luc
-"
-label_settings = SubResource("LabelSettings_yj2pu")
 
 [node name="NextButton" type="Button" parent="Panel"]
 layout_mode = 1
@@ -234,6 +187,69 @@ script = ExtResource("10_eeejv")
 libraries = {
 "": SubResource("AnimationLibrary_5c0j2")
 }
+
+[node name="VFlowContainer" type="VFlowContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = -468.0
+offset_right = 576.0
+offset_bottom = -60.0
+grow_vertical = 0
+alignment = 2
+
+[node name="Char2" type="TextureRect" parent="Panel/VFlowContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("5_ejpn2")
+stretch_mode = 3
+
+[node name="SpeechBubble" type="TextureRect" parent="Panel/VFlowContainer/Char2"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_top = -147.0
+offset_right = 591.0
+offset_bottom = 53.0
+grow_horizontal = 0
+texture = ExtResource("6_0et3l")
+
+[node name="DialogText" type="Label" parent="Panel/VFlowContainer/Char2/SpeechBubble"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -254.5
+offset_top = -77.0
+offset_right = 265.5
+offset_bottom = 67.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hello"
+label_settings = ExtResource("8_uu3ef")
+autowrap_mode = 2
+
+[node name="Char2Name" type="Label" parent="Panel/VFlowContainer/Char2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -72.5
+offset_top = -83.0
+offset_right = 66.5
+offset_bottom = -5.0
+grow_horizontal = 2
+text = "Luc
+"
+label_settings = SubResource("LabelSettings_yj2pu")
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="SceneTransitionRect" type="ColorRect" parent="."]
 visible = false

@@ -20,9 +20,9 @@ public partial class PlaceScene : Control
 		gameState = GameState.GetInstance();
 
 		Label placeName = GetNode<Label>("Panel/PlaceName");
-		Node char2Rect = GetNode("Panel/Char2");
-		Label char2Name = GetNode<Label>("Panel/Char2/Char2Name");
-		DialogText = GetNode<Label>("Panel/Char2/SpeechBubble/DialogText");
+		TextureRect char2Rect = GetNode<TextureRect>("Panel/VFlowContainer/Char2");
+		Label char2Name = GetNode<Label>("Panel/VFlowContainer/Char2/Char2Name");
+		DialogText = GetNode<Label>("Panel/VFlowContainer/Char2/SpeechBubble/DialogText");
 		NextButton = GetNode<NextButton>("Panel/NextButton");
 
 		var charInfo = gameState.GetCurrentCharacter();
@@ -39,6 +39,7 @@ public partial class PlaceScene : Control
 		}
 
 		char2Name.Text = charInfo.Character;
+		char2Rect.Texture = GD.Load<Texture2D>("res://assets/" + charInfo.Character.Replace(' ', '_') + ".png");
 		DialogText.Text = "";
 		DialogText.LabelSettings.FontSize = (int)(0.9 * DialogText.Size[1] / (numberOfLines + 1)); // Keep one more line in case of text wrapping
 	}
@@ -55,7 +56,8 @@ public partial class PlaceScene : Control
 		int numberOfChars = (int)(interactionWithAmplifiedBreaks.Length * TimeElapsed / ANIMATION_DURATION);
 		DialogText.Text = interactionWithAmplifiedBreaks.Substring(0, numberOfChars).Replace(new string('\n', AMPLIFICATION_FACTOR), "\n").TrimEnd('\n');
 
-		if (TimeElapsed > ANIMATION_DURATION) {
+		if (TimeElapsed > ANIMATION_DURATION)
+		{
 			await NextButton.ShowWithAnimation();
 		}
 	}

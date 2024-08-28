@@ -90,6 +90,8 @@ namespace FYBF
 
         public string FormatTransportation(string transportationType)
         {
+            if (transportationType == "Pied") return "Aller à pied";
+            
             string lowercaseTransporation = transportationType.ToLower();
             bool startsWithAVowel = ALL_VOWELS.Any(v => v == lowercaseTransporation[0]);
             bool isCurrentTransportation = transportationType == PreviousSelectedTransportationType;

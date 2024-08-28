@@ -9,10 +9,33 @@
 - [ ] Play an animation when a new character is reached
 - [x] Text animation
 - [ ] Play an animation when changing transportation type
-- [ ] Use different pngs for each character
+- [x] Use different pngs for each character
 - [ ] Ajouter les contraintes sur les connexions
 - [ ] Create all the pngs
+
+## Fixes
+
+- [ ] The size of the characters messes up with the speech bubble
 
 ## Optionals
 
 - [ ] Create a map
+
+## Drawings
+
+- [x] Luc
+- [x] Laurent
+- [x] Lou
+- [x] benjamin
+- [x] Horloge
+- [x] Escalade
+- [x] Bastien
+- [x] 6-2
+- [x] Train
+- [x] Avion
+- [x] Tram
+- [x] Metro
+- [x] Pied
+- [ ] Costa Rica
+- [ ] France
+- [ ] Points cardinaux
