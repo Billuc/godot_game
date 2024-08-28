@@ -22,5 +22,125 @@
         "to": "Paris",
         "type": "Train",
         "indication": "Vers l'Ouest"
+    },
+    {
+        "from": "Paris",
+        "to": "Nord de la France",
+        "type": "Train",
+        "indication": "Vers le Nord"
+    },
+    {
+        "from": "Nord de la France",
+        "to": "Paris",
+        "type": "Train",
+        "indication": "Vers le Sud"
+    },
+    {
+        "from": "Paris",
+        "to": "Lyon Part-Dieu",
+        "type": "Train",
+        "indication": "Vers le Sud-Est"
+    },
+    {
+        "from": "Lyon Part-Dieu",
+        "to": "Paris",
+        "type": "Train",
+        "indication": "Vers le Nord-Ouest"
+    },
+    {
+        "from": "Lyon Part-Dieu",
+        "to": "La Doua / Creatis",
+        "type": "Tram",
+        "indication": "Vers le Nord"
+    },
+    {
+        "from": "La Doua / Creatis",
+        "to": "Lyon Part-Dieu",
+        "type": "Tram",
+        "indication": "Vers le Sud"
+    },
+    {
+        "from": "Lyon Part-Dieu",
+        "to": "Beauvisage CISL",
+        "type": "Tram",
+        "indication": "Vers le Sud"
+    },
+    {
+        "from": "Beauvisage CISL",
+        "to": "Lyon Part-Dieu",
+        "type": "Tram",
+        "indication": "Vers le Nord"
+    },
+    {
+        "from": "Lyon Part-Dieu",
+        "to": "Bellecour",
+        "type": "Metro",
+        "indication": "Vers le Sud-Ouest"
+    },
+    {
+        "from": "Bellecour",
+        "to": "Lyon Part-Dieu",
+        "type": "Metro",
+        "indication": "Vers le Nord-Est"
+    },
+    {
+        "from": "Beauvisage CISL",
+        "to": "Laennec",
+        "type": "Tram",
+        "indication": "Vers l'Est"
+    },
+    {
+        "from": "Laennec",
+        "to": "Beauvisage CISL",
+        "type": "Tram",
+        "indication": "Vers l'Ouest"
+    },
+    {
+        "from": "Bellecour",
+        "to": "Laennec",
+        "type": "Metro",
+        "indication": "Vers le Sud-Est"
+    },
+    {
+        "from": "Laennec",
+        "to": "Bellecour",
+        "type": "Metro",
+        "indication": "Vers le Nord-Ouest"
+    },
+    {
+        "from": "Bellecour",
+        "to": "Valmy",
+        "type": "Metro",
+        "indication": "Vers le Nord-Ouest"
+    },
+    {
+        "from": "Valmy",
+        "to": "Bellecour",
+        "type": "Metro",
+        "indication": "Vers le Sud-Est"
+    },
+    {
+        "from": "Bellecour",
+        "to": "Hotel de Ville",
+        "type": "Metro",
+        "indication": "Vers le Nord"
+    },
+    {
+        "from": "Hotel de Ville",
+        "to": "Bellecour",
+        "type": "Metro",
+        "indication": "Vers le Sud"
+    },
+    {
+        "from": "Bellecour",
+        "to": "Gio Gio",
+        "type": "Pied",
+        "indication": "Vers le Nord"
+    },
+    {
+        "from": "Gio Gio",
+        "to": "Bellecour",
+        "type": "Pied",
+        "indication": "Vers le Sud"
     }
 ]
