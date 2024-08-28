@@ -52,9 +52,9 @@ namespace FYBF
             return AllConnections.Where(c => c.From == CurrentPlace).Select(c => c.Type).Distinct().ToArray();
         }
 
-        public string[] GetCurrentIndications()
+        public Connection[] GetCurrentConnections()
         {
-            return AllConnections.Where(c => c.From == CurrentPlace && c.Type == SelectedTransportationType).Select(c => c.Indication).Distinct().ToArray();
+            return AllConnections.Where(c => c.From == CurrentPlace && c.Type == SelectedTransportationType).ToArray();
         }
 
         public void SetCurrentPlace(string newPlace)
@@ -75,8 +75,17 @@ namespace FYBF
 
         public void SetTransportationType(string newTransportationType)
         {
-            PreviousSelectedTransportationType = SelectedTransportationType;
             SelectedTransportationType = newTransportationType;
+        }
+
+        public string GetSelectedTransportationType()
+        {
+            return SelectedTransportationType;
+        }
+
+        public string GetTransportationTypeForAnimation()
+        {
+            return PreviousSelectedTransportationType;
         }
 
         public string FormatTransportation(string transportationType)
@@ -92,7 +101,7 @@ namespace FYBF
         }
     }
 
-    class Place
+    public class Place
     {
         [JsonPropertyName("name")]
         public string Name { get; set; }
@@ -104,7 +113,7 @@ namespace FYBF
         public string Interaction { get; set; } = String.Empty;
     }
 
-    class Connection
+    public class Connection
     {
         [JsonPropertyName("from")]
         public string From { get; set; }

@@ -2,7 +2,7 @@ using FYBF;
 using Godot;
 using System;
 
-public partial class TransportationChoiceScene : Control
+public partial class DestinationChoiceScene : Control
 {
 	private GameState gameState;
 	private Node choiceContainer;
@@ -15,13 +15,16 @@ public partial class TransportationChoiceScene : Control
 
 		Label placeName = GetNode<Label>("Panel/PlaceName");
 		choiceContainer = GetNode("Panel/VBoxContainer");
+		Label transportationLabel = GetNode<Label>("Panel/VBoxContainer/TransportationChoice");
 		transitionRect = GetNode<SceneTransitionRect>("/root/Control/SceneTransitionRect");
 
-		string[] transportationOptions = gameState.GetCurrentTransportationTypes();
+		Connection[] connectionOptions = gameState.GetCurrentConnections();
 
 		placeName.Text = gameState.GetCurrentPlaceName();
+		transportationLabel.Text += gameState.GetSelectedTransportationType();
 
-		foreach (string option in transportationOptions) {
+		foreach (Connection option in connectionOptions)
+		{
 			CreateOptionButton(option);
 		}
 	}
@@ -31,14 +34,24 @@ public partial class TransportationChoiceScene : Control
 	{
 	}
 
-	private void CreateOptionButton(string transportation) {
+	private void CreateOptionButton(Connection connection)
+	{
 		Button button = new Button();
-		button.Text = gameState.FormatTransportation(transportation);
+		button.Text = connection.Indication;
 		button.Theme = GD.Load<Theme>("res://button_theme.tres");
 
-		button.Pressed += async () => {
-			gameState.SetTransportationType(transportation);
-			await transitionRect.TransitionTo("res://destination_choice.tscn");
+		button.Pressed += async () =>
+		{
+			gameState.SetCurrentPlace(connection.To);
+
+			if (string.IsNullOrEmpty(gameState.GetCurrentCharacter().Character))
+			{
+				await transitionRect.TransitionTo("res://transportation_choice.tscn");
+			}
+			else
+			{
+				await transitionRect.TransitionTo("res://place.tscn");
+			}
 		};
 
 		choiceContainer.AddChild(button);

@@ -134,6 +134,7 @@ offset_bottom = 65.0
 grow_horizontal = 2
 text = "Costa Rica"
 label_settings = SubResource("LabelSettings_orhqa")
+horizontal_alignment = 1
 
 [node name="Ximena" type="TextureRect" parent="Panel"]
 layout_mode = 2

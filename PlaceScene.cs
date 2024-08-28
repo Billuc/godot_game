@@ -18,7 +18,6 @@ public partial class PlaceScene : Control
 	public override void _Ready()
 	{
 		gameState = GameState.GetInstance();
-		gameState.SetCurrentPlace("Dambelin");
 
 		Label placeName = GetNode<Label>("Panel/PlaceName");
 		Node char2Rect = GetNode("Panel/Char2");
