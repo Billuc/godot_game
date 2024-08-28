@@ -22,9 +22,5 @@
         "to": "Paris",
         "type": "Train",
         "indication": "Vers l'Ouest"
-    },
-    {
-        "from": "Paris",
-        "to": "Nord de la France"
     }
 ]

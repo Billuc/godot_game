@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://5k67f0rjmf8p"]
+
+[ext_resource type="FontFile" uid="uid://hvmxxp6vl14u" path="res://Inconsolata/InconsolataNerdFont-Bold.ttf" id="1_gtftf"]
+
+[resource]
+font = ExtResource("1_gtftf")
+font_size = 56
+font_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.12549)

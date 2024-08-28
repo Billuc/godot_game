@@ -8,6 +8,7 @@ namespace FYBF
 {
     public class GameState
     {
+        private static readonly char[] ALL_VOWELS = { 'a', 'e', 'i', 'o', 'u', 'y' };
         private static GameState _instance = null;
 
         private Place[] AllPlaces { get; set; }
@@ -76,6 +77,18 @@ namespace FYBF
         {
             PreviousSelectedTransportationType = SelectedTransportationType;
             SelectedTransportationType = newTransportationType;
+        }
+
+        public string FormatTransportation(string transportationType)
+        {
+            string lowercaseTransporation = transportationType.ToLower();
+            bool startsWithAVowel = ALL_VOWELS.Any(v => v == lowercaseTransporation[0]);
+            bool isCurrentTransportation = transportationType == PreviousSelectedTransportationType;
+
+            string action = isCurrentTransportation ? "Rester dans " : "Prendre ";
+            string article = startsWithAVowel ? "l'" : "le ";
+
+            return action + article + lowercaseTransporation;
         }
     }
 

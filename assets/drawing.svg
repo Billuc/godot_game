@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showguides="true"
      inkscape:zoom="1.1527686"
-     inkscape:cx="426.79859"
-     inkscape:cy="415.08765"
+     inkscape:cx="426.79858"
+     inkscape:cy="1040.5384"
      inkscape:window-width="1870"
      inkscape:window-height="1163"
      inkscape:window-x="0"
@@ -295,12 +295,18 @@
        inkscape:transform-center-x="1.6903407e-06"
        inkscape:transform-center-y="-1.4880463e-06"
        d="m 139.69307,105.39462 5.59541,5.08904 -7.50722,9.6389 -5.69538,-4.41901 z"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="path13.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="rect13"
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
        d="m 150.7226,61.139645 h 48 c 3.324,0 6,2.676 6,6 v 28 c 0,3.324 -2.676,5.999995 -6,5.999995 h -48 c -1.61848,0 -8.23183,6.7995 -8.23183,6.7995 0,0 2.23183,-11.093973 2.23183,-12.799495 v -28 c 0,-3.324 2.676,-6 6,-6 z"
-       sodipodi:nodetypes="sssssscsss" />
+       sodipodi:nodetypes="sssssscsss"
+       inkscape:export-filename="speech_bubble.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 141.49083,190.07493 h 41.35405 l -18.39297,-12.04728"
@@ -309,5 +315,13 @@
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 182.84488,190.07493 164.4519,202.12222"
        id="path16" />
+    <path
+       id="rect2"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round"
+       d="m 65.97752,224.10287 h 125.83702 c 6.648,0 12,5.352 12,12 v 23.05607 c 0,6.648 -5.352,12 -12,12 H 65.97752 c -3.143988,0 -15.518363,2.92924 -15.518363,2.92924 0,0 3.518363,-11.42523 3.518363,-14.92924 v -23.05607 c 0,-6.648 5.352,-12 12,-12 z"
+       sodipodi:nodetypes="sssssscsss"
+       inkscape:export-filename="speech_bubble.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
 </svg>
