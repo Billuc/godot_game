@@ -34,7 +34,9 @@ public partial class TransportationChoiceScene : Control
 	private void CreateOptionButton(string transportation) {
 		Button button = new Button();
 		button.Text = gameState.FormatTransportation(transportation);
-		button.Theme = GD.Load<Theme>("res://button_theme.tres");
+		button.Icon = GD.Load<Texture2D>("res://assets/" + transportation + ".png");
+		button.Theme = GD.Load<Theme>("res://transportation_button_theme.tres");
+		button.SizeFlagsHorizontal = SizeFlags.ShrinkCenter;
 
 		button.Pressed += async () => {
 			gameState.SetTransportationType(transportation);

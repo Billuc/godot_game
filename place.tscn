@@ -7,7 +7,6 @@
 [ext_resource type="FontFile" uid="uid://hvmxxp6vl14u" path="res://Inconsolata/InconsolataNerdFont-Bold.ttf" id="4_ksic5"]
 [ext_resource type="Texture2D" uid="uid://c54mu14v661hv" path="res://assets/boy_character.png" id="5_ejpn2"]
 [ext_resource type="Texture2D" uid="uid://bdlqwgga75kxa" path="res://assets/speech_bubble.png" id="6_0et3l"]
-[ext_resource type="LabelSettings" uid="uid://dx6ypxybav3s5" path="res://text_label.tres" id="8_uu3ef"]
 [ext_resource type="Theme" uid="uid://d8xym1c3gkbf" path="res://button_theme.tres" id="8_wtk3m"]
 [ext_resource type="Texture2D" uid="uid://buor4ma257dwa" path="res://assets/next.png" id="9_wtdig"]
 [ext_resource type="Script" path="res://NextButton.cs" id="10_eeejv"]
@@ -61,6 +60,11 @@ _data = {
 "RESET": SubResource("Animation_672yf"),
 "show": SubResource("Animation_a7pwv")
 }
+
+[sub_resource type="LabelSettings" id="LabelSettings_ggkvl"]
+font = ExtResource("3_viour")
+font_size = 39
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_yj2pu"]
 font = ExtResource("3_viour")
@@ -232,7 +236,7 @@ offset_bottom = 67.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Hello"
-label_settings = ExtResource("8_uu3ef")
+label_settings = SubResource("LabelSettings_ggkvl")
 autowrap_mode = 2
 
 [node name="Char2Name" type="Label" parent="Panel/VFlowContainer/Char2"]
