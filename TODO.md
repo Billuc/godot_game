@@ -11,7 +11,7 @@
 - [x] Play an animation when changing transportation type
 - [x] Use different pngs for each character
 - [ ] Ajouter les contraintes sur les connexions
-- [ ] Create all the pngs
+- [x] Create all the pngs
 - [ ] Add possibility to change transportation type 
 
 ## Fixes
@@ -39,6 +39,6 @@
 - [x] Tram
 - [x] Metro
 - [x] Pied
-- [ ] Costa Rica
-- [ ] France
-- [ ] Points cardinaux
+- [x] Costa Rica
+- [x] France
+- [x] Points cardinaux

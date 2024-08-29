@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showguides="true"
      inkscape:zoom="1"
-     inkscape:cx="1599"
-     inkscape:cy="2135.5"
+     inkscape:cx="731.5"
+     inkscape:cy="1757.5"
      inkscape:window-width="1870"
      inkscape:window-height="1163"
      inkscape:window-x="0"
@@ -53,9 +53,36 @@
        orientation="0,-1"
        id="guide16"
        inkscape:locked="false" />
+    <sodipodi:guide
+       position="687.65207,231.91251"
+       orientation="1,0"
+       id="guide54"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="687.65202,224.6189"
+       orientation="0,-1"
+       id="guide55"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
-     id="defs1" />
+     id="defs1">
+    <linearGradient
+       id="swatch37"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop37" />
+    </linearGradient>
+    <linearGradient
+       id="swatch36"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#e70000;stop-opacity:1;"
+         offset="0"
+         id="stop36" />
+    </linearGradient>
+  </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -126,7 +153,7 @@
          x="26.169094"
          y="202.48842">Next</tspan></text>
     <ellipse
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="path3"
        cx="26.553028"
        cy="78.026306"
@@ -1153,5 +1180,173 @@
        d="m 457.80616,566.31881 c 1.36073,-5.32941 2.7275,-6.82941 5.5981,-9.516"
        id="path43"
        sodipodi:nodetypes="cc" />
+    <path
+       style="fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;fill:none;stroke-dasharray:none"
+       d="m 105,348.04924 c 37.63508,0.0186 59.45191,15.94968 87.11082,12.85795 11.21313,29.20438 35.95181,46.97723 61.10335,59.57819 -6.552,26.29993 -7.14768,58.31337 -3.83521,84.6133 -8.73023,-10.10734 -17.46045,-15.39895 -26.19067,-21.49027 l 10.14635,17.93247 -0.90035,9.10156 c -10.9802,-2.90651 -18.68464,-8.34455 -25.24594,-14.66602 L 210,478.13431 c -12.6355,-16.89205 -31.64646,-24.56353 -45.54809,-36.86844 -15.65311,-13.85523 -26.4666,-32.09342 -44.7634,-36.93857 l 17.96782,20.62463 -5.43872,9.31936 C 118.31637,427.41953 105.8345,418.92933 95.565768,407.88441 109.28281,387.82453 105.64525,367.95313 105,348.04924 Z"
+       id="path35"
+       sodipodi:nodetypes="cccccccccsccccc"
+       inkscape:export-filename="CostaRica.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 4.2850313,449.16709 c -8.644568,15.92484 -12.213493,37.72516 -14.7391103,59.05983 -31.633396,22.4974 -22.98541,33.11778 -39.151519,71.36793 l 26.650114,-10.8594 c 8.355972,24.36651 20.4511453,64.82905 12.501405,94.41348 7.3711353,12.55299 8.8470823,14.79642 27.467423,15.68476 -48.212116,59.93464 -119.655574,19.85138 -141.545104,13.27481 -21.88953,-6.57656 -44.92211,16.63549 -35.15221,50.7753 -47.86551,-1.62067 -93.84876,-6.21272 -124.1801,-35.51325 23.86415,-91.18358 4.3303,-147.2412 -8.609,-164.73399 -12.9393,-17.49279 -52.5349,-44.59725 -95.22521,-40.76828 -13.85156,-25.3012 -8.53815,-31.17358 -2.41753,-36.22765 34.624,-16.71437 54.85642,11.78368 81.66127,6.16191 l -16.77074,-66.43727 h 19.37829 c 6.05934,33.74006 33.26014,40.31741 63.7797,33.74006 39.67519,-25.38934 57.19226,-55.15194 55.90735,-91.91717 l 29.00167,-9.05452 C -133.777,383.95339 -49.605598,443.33866 4.2850313,449.16709 Z"
+       id="path52"
+       sodipodi:nodetypes="cccccczcczccccccccc"
+       inkscape:export-filename="France.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="path53"
+       cx="687.65204"
+       cy="72.381104"
+       r="42"
+       inkscape:export-filename="Nord.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 681.19385,72.381099 6.45822,-36.647455 6.45822,36.647458 z"
+       id="path55"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 681.19385,72.381102 6.45822,36.647458 6.45822,-36.647461 z"
+       id="path55-5"
+       sodipodi:nodetypes="cccc" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="path53-2"
+       cx="787.81116"
+       cy="72.381104"
+       r="42"
+       inkscape:export-filename="Est.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 787.8112,65.922888 36.64746,6.45822 -36.64746,6.45822 z"
+       id="path55-9"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 787.8112,65.922888 -36.64746,6.45822 36.64746,6.45822 z"
+       id="path55-5-1"
+       sodipodi:nodetypes="cccc" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="path53-9"
+       cx="884.49042"
+       cy="72.381104"
+       r="42"
+       inkscape:export-filename="Sud.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 890.94867,72.381101 -6.45822,36.647459 -6.45822,-36.647459 z"
+       id="path55-3"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 890.94867,72.381101 -6.45822,-36.64746 -6.45822,36.64746 z"
+       id="path55-5-6"
+       sodipodi:nodetypes="cccc" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="path53-6"
+       cx="981.79633"
+       cy="72.381104"
+       r="42"
+       inkscape:export-filename="Ouest.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 981.79639,78.839322 -36.64746,-6.45822 36.64746,-6.45822 z"
+       id="path55-1"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 981.79639,78.839322 36.64741,-6.45822 -36.64741,-6.45822 z"
+       id="path55-5-8"
+       sodipodi:nodetypes="cccc" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="path53-93"
+       cx="687.65204"
+       cy="177.24731"
+       r="42"
+       inkscape:export-filename="NordEst.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 683.08542,172.68067 30.48032,-21.34702 -21.34702,30.48032 z"
+       id="path55-19"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 683.08542,172.68067 -21.34702,30.48032 30.48032,-21.34702 z"
+       id="path55-5-4"
+       sodipodi:nodetypes="cccc" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="path53-2-7"
+       cx="787.81116"
+       cy="177.24731"
+       r="42"
+       inkscape:export-filename="SudEst.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="M 792.37785,172.68068 813.72487,203.161 783.24455,181.81398 Z"
+       id="path55-9-8"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 792.37785,172.68068 -30.48032,-21.34702 21.34702,30.48032 z"
+       id="path55-5-1-4"
+       sodipodi:nodetypes="cccc" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="path53-9-5"
+       cx="884.49042"
+       cy="177.24731"
+       r="42"
+       inkscape:export-filename="SudOuest.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 889.0571,181.81397 -30.48032,21.34702 21.34702,-30.48032 z"
+       id="path55-3-0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 889.0571,181.81397 21.34702,-30.48032 -30.48032,21.34702 z"
+       id="path55-5-6-3"
+       sodipodi:nodetypes="cccc" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="path53-6-6"
+       cx="981.79633"
+       cy="177.24731"
+       r="42"
+       inkscape:export-filename="NordOuest.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 977.22973,181.81399 -21.34701,-30.48032 30.48031,21.34702 z"
+       id="path55-1-1"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.09999;stroke-linecap:round;stroke-linejoin:round"
+       d="M 977.22973,181.81399 1007.71,203.16097 986.36303,172.68069 Z"
+       id="path55-5-8-0"
+       sodipodi:nodetypes="cccc" />
   </g>
 </svg>

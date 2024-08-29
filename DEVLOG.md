@@ -22,3 +22,5 @@
 ## 29/08/2024
 
 - Added an animation scene when changing transportation type
+- Created the last pngs for the buttons
+- Added the icons to the buttons
