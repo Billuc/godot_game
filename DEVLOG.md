@@ -7,3 +7,18 @@
 - Main scene
 - Play button leading to the next scene
 - Fade transition between scenes. The way it works with a ColorRect on each scene is not something I like + it jitters a bit
+
+## 28/08/2024
+
+- Using data from GameScene in place scene
+- Added scenes for dialogs, transportation choice and destination choice
+- Added animation on text display (by writing characters one by one)
+- Added delay on newlines (by amplifying the importance of newline chars in the string)
+- Added all the connections
+- Added pngs for all the characters and transportation types
+- Added icons on transportation choice buttons
+- The basis on the game is done
+
+## 29/08/2024
+
+- Added an animation scene when changing transportation type

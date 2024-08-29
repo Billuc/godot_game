@@ -42,15 +42,22 @@ public partial class DestinationChoiceScene : Control
 
 		button.Pressed += async () =>
 		{
-			gameState.SetCurrentPlace(connection.To);
+			TransitionData transitionData = gameState.SetCurrentPlace(connection.To);
 
-			if (string.IsNullOrEmpty(gameState.GetCurrentCharacter().Character))
+			if (transitionData.TransportationChanged)
 			{
-				await transitionRect.TransitionTo("res://transportation_choice.tscn");
+				await transitionRect.TransitionTo("res://transportation_animation.tscn");
 			}
 			else
 			{
-				await transitionRect.TransitionTo("res://place.tscn");
+				if (string.IsNullOrEmpty(gameState.GetCurrentCharacter().Character))
+				{
+					await transitionRect.TransitionTo("res://transportation_choice.tscn");
+				}
+				else
+				{
+					await transitionRect.TransitionTo("res://place.tscn");
+				}
 			}
 		};
 

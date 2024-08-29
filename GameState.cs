@@ -57,10 +57,11 @@ namespace FYBF
             return AllConnections.Where(c => c.From == CurrentPlace && c.Type == SelectedTransportationType).ToArray();
         }
 
-        public void SetCurrentPlace(string newPlace)
+        public TransitionData SetCurrentPlace(string newPlace)
         {
             Place newPlaceObj = AllPlaces.First(p => p.Name == newPlace);
             bool bestPlaceReached = !AllPlaces.TakeWhile(p => p.Character != BestCharacterReached).Any(p => p.Name == newPlace);
+            bool transportationChanged = PreviousSelectedTransportationType != SelectedTransportationType;
 
             IsNewBestCharacter = bestPlaceReached && newPlaceObj.Character != "" && newPlaceObj.Character != BestCharacterReached;
             if (IsNewBestCharacter)
@@ -71,6 +72,11 @@ namespace FYBF
             CurrentPlace = newPlaceObj.Name;
             PreviousSelectedTransportationType = SelectedTransportationType;
             SelectedTransportationType = String.Empty;
+
+            return new TransitionData() {
+                NewBestPlace = bestPlaceReached,
+                TransportationChanged = transportationChanged
+            };
         }
 
         public void SetTransportationType(string newTransportationType)
@@ -91,7 +97,7 @@ namespace FYBF
         public string FormatTransportation(string transportationType)
         {
             if (transportationType == "Pied") return "Aller à pied";
-            
+
             string lowercaseTransporation = transportationType.ToLower();
             bool startsWithAVowel = ALL_VOWELS.Any(v => v == lowercaseTransporation[0]);
             bool isCurrentTransportation = transportationType == PreviousSelectedTransportationType;
@@ -128,5 +134,11 @@ namespace FYBF
 
         [JsonPropertyName("indication")]
         public string Indication { get; set; }
+    }
+
+    public class TransitionData
+    {
+        public bool TransportationChanged { get; set; }
+        public bool NewBestPlace { get; set; }
     }
 }
