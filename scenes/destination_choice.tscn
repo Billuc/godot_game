@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ybqoxuqc2md6"]
+[gd_scene load_steps=13 format=3 uid="uid://ybqoxuqc2md6"]
 
 [ext_resource type="Script" path="res://scripts/DestinationChoiceScene.cs" id="1_dinqt"]
 [ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://themes/panel_theme.tres" id="1_kcl86"]
@@ -7,6 +7,8 @@
 [ext_resource type="LabelSettings" uid="uid://di20ijtrajaq6" path="res://themes/small_label.tres" id="4_ym0tm"]
 [ext_resource type="LabelSettings" uid="uid://dx6ypxybav3s5" path="res://themes/text_label.tres" id="5_qacef"]
 [ext_resource type="Script" path="res://scripts/SceneTransitionRect.cs" id="6_x2ra0"]
+[ext_resource type="Texture2D" uid="uid://ciogigwt6wkyl" path="res://assets/text_bubble.png" id="7_sv4vo"]
+[ext_resource type="Texture2D" uid="uid://yy67p1vh7wb3" path="res://assets/hide_bubble.png" id="8_0w31y"]
 
 [sub_resource type="Animation" id="Animation_de0t2"]
 length = 0.001
@@ -129,6 +131,44 @@ layout_mode = 2
 text = "Où veux-tu aller ?"
 label_settings = ExtResource("5_qacef")
 autowrap_mode = 2
+
+[node name="TextBubble" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.8
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 15.0
+offset_right = -15.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_sv4vo")
+
+[node name="Label" type="Label" parent="Panel/TextBubble"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 15.0
+offset_right = -20.0
+offset_bottom = -15.0
+
+[node name="Hide" type="TextureButton" parent="Panel/TextBubble"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -45.0
+offset_right = -20.0
+offset_bottom = -15.0
+texture_normal = ExtResource("8_0w31y")
+ignore_texture_size = true
+stretch_mode = 5
 
 [node name="SceneTransitionRect" type="ColorRect" parent="."]
 visible = false

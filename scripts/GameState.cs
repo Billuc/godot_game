@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -16,6 +18,7 @@ namespace FYBF
 
         private string CurrentPlace { get; set; } = String.Empty;
         private string BestCharacterReached { get; set; } = String.Empty;
+        private List<string> CharactersReached { get; set; } = new List<string>();
         private bool IsNewBestCharacter { get; set; } = false;
         private string SelectedTransportationType { get; set; } = String.Empty;
         private string PreviousSelectedTransportationType { get; set; } = String.Empty;
@@ -67,6 +70,7 @@ namespace FYBF
             if (IsNewBestCharacter)
             {
                 BestCharacterReached = newPlaceObj.Character;
+                CharactersReached.Add(newPlaceObj.Character);
             }
 
             CurrentPlace = newPlaceObj.Name;
@@ -107,6 +111,16 @@ namespace FYBF
 
             return action + article + lowercaseTransporation;
         }
+
+        public string CheckConstraints(Connection connection) {
+            foreach (Constraint cons in connection.Constraints) {
+                if (!CharactersReached.Contains(cons.NeedCharacter)) {
+                    return cons.Message;
+                }
+            }
+
+            return String.Empty;
+        }
     }
 
     public class Place
@@ -134,6 +148,17 @@ namespace FYBF
 
         [JsonPropertyName("indication")]
         public string Indication { get; set; }
+
+        [JsonPropertyName("constraints")]
+        public Constraint[] Constraints { get; set; } = Array.Empty<Constraint>();
+    }
+
+    public class Constraint {
+        [JsonPropertyName("need_character")]
+        public string NeedCharacter { get; set; }
+
+        [JsonPropertyName("message")]
+        public string Message { get; set; }
     }
 
     public class TransitionData

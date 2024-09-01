@@ -27,7 +27,13 @@
         "from": "Paris",
         "to": "Nord de la France",
         "type": "Train",
-        "indication": "Vers le Nord"
+        "indication": "Vers le Nord",
+        "constraints": [
+            {
+                "need_character": "Laurent",
+                "message": "La famille de Luc n'habite pas par là !"
+            }
+        ]
     },
     {
         "from": "Nord de la France",
@@ -39,7 +45,17 @@
         "from": "Paris",
         "to": "Lyon Part-Dieu",
         "type": "Train",
-        "indication": "Vers le Sud-Est"
+        "indication": "Vers le Sud-Est",
+        "constraints": [
+            {
+                "need_character": "Laurent",
+                "message": "La famille de Luc n'habite pas par là !"
+            },
+            {
+                "need_character": "Lou",
+                "message": "Ce n'est pas par là Herlies ^^'"
+            }
+        ]
     },
     {
         "from": "Lyon Part-Dieu",
@@ -63,7 +79,13 @@
         "from": "Lyon Part-Dieu",
         "to": "Beauvisage CISL",
         "type": "Tram",
-        "indication": "Vers le Sud"
+        "indication": "Vers le Sud",
+        "constraints": [
+            {
+                "need_character": "Horloge",
+                "message": "Luc ne travaille pas par là :p"
+            }
+        ]
     },
     {
         "from": "Beauvisage CISL",
@@ -75,7 +97,17 @@
         "from": "Lyon Part-Dieu",
         "to": "Bellecour",
         "type": "Metro",
-        "indication": "Vers le Sud-Ouest"
+        "indication": "Vers le Sud-Ouest",
+        "constraints": [
+            {
+                "need_character": "Horloge",
+                "message": "Luc ne travaille pas par là :p"
+            },
+            {
+                "need_character": "Benjamin",
+                "message": "Berty n'est pas par là :p"
+            }
+        ]
     },
     {
         "from": "Bellecour",
@@ -111,7 +143,13 @@
         "from": "Bellecour",
         "to": "Valmy",
         "type": "Metro",
-        "indication": "Vers le Nord-Ouest"
+        "indication": "Vers le Nord-Ouest",
+        "constraints": [
+            {
+                "need_character": "Salle d'escalade",
+                "message": "Tu dois aller à la salle d'escalade de Laennec"
+            }
+        ]
     },
     {
         "from": "Valmy",
@@ -123,7 +161,17 @@
         "from": "Bellecour",
         "to": "Hotel de Ville",
         "type": "Metro",
-        "indication": "Vers le Nord"
+        "indication": "Vers le Nord",
+        "constraints": [
+            {
+                "need_character": "Salle d'escalade",
+                "message": "Tu dois aller à la salle d'escalade de Laennec"
+            },
+            {
+                "need_character": "Bastien",
+                "message": "Luc n'habite plus à Meyzieu tu sais xD"
+            }
+        ]
     },
     {
         "from": "Hotel de Ville",
@@ -135,7 +183,13 @@
         "from": "Bellecour",
         "to": "Gio Gio",
         "type": "Pied",
-        "indication": "Vers le Nord"
+        "indication": "Vers le Nord",
+        "constraints": [
+            {
+                "need_character": "Les 6-2",
+                "message": "Tu sais, tu as meilleur temps de prendre le metro"
+            }
+        ]
     },
     {
         "from": "Gio Gio",

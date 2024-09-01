@@ -7,6 +7,7 @@ public partial class DestinationChoiceScene : Control
 	private GameState gameState;
 	private Node choiceContainer;
 	private SceneTransitionRect transitionRect;
+	private TextAnimation textAnimation;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -17,6 +18,8 @@ public partial class DestinationChoiceScene : Control
 		choiceContainer = GetNode("Panel/VBoxContainer");
 		Label transportationLabel = GetNode<Label>("Panel/VBoxContainer/TransportationChoice");
 		transitionRect = GetNode<SceneTransitionRect>("/root/Control/SceneTransitionRect");
+		TextureRect textBubble = GetNode<TextureRect>("Panel/TextBubble");
+		Label textBubbleLabel = GetNode<Label>("Panel/TextBubble/Label");
 
 		Connection[] connectionOptions = gameState.GetCurrentConnections();
 
@@ -27,11 +30,19 @@ public partial class DestinationChoiceScene : Control
 		{
 			CreateOptionButton(option);
 		}
+
+		textAnimation = new TextAnimation(textBubble, textBubbleLabel);
+
+		textBubble.GetNode<TextureButton>("Hide").Pressed += () =>
+		{
+			textAnimation.Hide();
+		};
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		textAnimation.Process(delta);
 	}
 
 	private void CreateOptionButton(Connection connection)
@@ -39,11 +50,20 @@ public partial class DestinationChoiceScene : Control
 		Button button = new Button();
 		button.Text = connection.Indication;
 		button.Icon = GetIconFromIndication(connection.Indication);
-		button.Theme = GD.Load<Theme>("res://scenes/transportation_button_theme.tres");
+		button.Theme = GD.Load<Theme>("res://themes/transportation_button_theme.tres");
 		button.SizeFlagsHorizontal = SizeFlags.ShrinkCenter;
 
 		button.Pressed += async () =>
 		{
+			string constraintMessage = gameState.CheckConstraints(connection);
+
+			if (constraintMessage != String.Empty)
+			{
+				textAnimation.SetTextToDisplay(constraintMessage);
+				textAnimation.Start();
+				return;
+			}
+
 			TransitionData transitionData = gameState.SetCurrentPlace(connection.To);
 
 			if (transitionData.TransportationChanged)
@@ -66,7 +86,8 @@ public partial class DestinationChoiceScene : Control
 		choiceContainer.AddChild(button);
 	}
 
-	private Texture2D GetIconFromIndication(string indication) {
+	private Texture2D GetIconFromIndication(string indication)
+	{
 		string prefix = "res://assets/";
 		string suffix = ".png";
 		string name = MapIndicationToIconName(indication);
@@ -74,8 +95,10 @@ public partial class DestinationChoiceScene : Control
 		return GD.Load<Texture2D>(prefix + name + suffix);
 	}
 
-	private string MapIndicationToIconName(string indication) {
-		switch (indication) {
+	private string MapIndicationToIconName(string indication)
+	{
+		switch (indication)
+		{
 			case "Retour à la réalité":
 				return "France";
 			case "C'est les vacances !":
@@ -97,7 +120,7 @@ public partial class DestinationChoiceScene : Control
 			case "Vers le Sud-Ouest":
 				return "SudOuest";
 			default:
-				return ""; 
+				return "";
 		}
 	}
 }
