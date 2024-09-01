@@ -19,6 +19,6 @@ public partial class PlayButton : Button
 	private async void OnPressed()
 	{
 		gameState.SetCurrentPlace("Costa Rica");
-		await _transitionRect.TransitionTo("res://place.tscn");
+		await _transitionRect.TransitionTo("res://scenes/place.tscn");
 	}
 }

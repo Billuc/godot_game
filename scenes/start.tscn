@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://oo4jpmacl1tr"]
 
-[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://panel_theme.tres" id="1_xithb"]
+[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://themes/panel_theme.tres" id="1_xithb"]
 [ext_resource type="Texture2D" uid="uid://cboeqr2xqcktv" path="res://assets/girl_character.png" id="2_1kcy4"]
-[ext_resource type="Script" path="res://SceneTransitionRect.cs" id="3_orehh"]
+[ext_resource type="Script" path="res://scripts/SceneTransitionRect.cs" id="3_ajjj1"]
 
 [sub_resource type="Animation" id="Animation_de0t2"]
 length = 0.001
@@ -83,7 +83,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
-script = ExtResource("3_orehh")
+script = ExtResource("3_ajjj1")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="SceneTransitionRect"]
 libraries = {

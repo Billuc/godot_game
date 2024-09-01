@@ -1,11 +1,11 @@
 [gd_scene load_steps=11 format=3 uid="uid://e0g2mwcrmlmf"]
 
-[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://panel_theme.tres" id="1_2k84a"]
+[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://themes/panel_theme.tres" id="1_2k84a"]
 [ext_resource type="FontFile" uid="uid://hvmxxp6vl14u" path="res://Inconsolata/InconsolataNerdFont-Bold.ttf" id="1_hwik2"]
-[ext_resource type="Theme" uid="uid://d8xym1c3gkbf" path="res://button_theme.tres" id="3_ke51r"]
+[ext_resource type="Theme" uid="uid://d8xym1c3gkbf" path="res://themes/button_theme.tres" id="3_ke51r"]
 [ext_resource type="Texture2D" uid="uid://0tkvmhfvgcs0" path="res://assets/play.png" id="4_q7y88"]
-[ext_resource type="Script" path="res://PlayButton.cs" id="5_isovj"]
-[ext_resource type="Script" path="res://SceneTransitionRect.cs" id="6_iwkc3"]
+[ext_resource type="Script" path="res://scripts/PlayButton.cs" id="5_jm5ok"]
+[ext_resource type="Script" path="res://scripts/SceneTransitionRect.cs" id="6_hfey2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_linww"]
 font = ExtResource("1_hwik2")
@@ -104,7 +104,7 @@ size_flags_stretch_ratio = 0.0
 theme = ExtResource("3_ke51r")
 text = "Play"
 icon = ExtResource("4_q7y88")
-script = ExtResource("5_isovj")
+script = ExtResource("5_jm5ok")
 
 [node name="SceneTransitionRect" type="ColorRect" parent="."]
 visible = false
@@ -117,7 +117,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
-script = ExtResource("6_iwkc3")
+script = ExtResource("6_hfey2")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="SceneTransitionRect"]
 libraries = {

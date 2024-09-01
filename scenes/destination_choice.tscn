@@ -1,12 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://bhq1xtwb4r4rw"]
+[gd_scene load_steps=11 format=3 uid="uid://ybqoxuqc2md6"]
 
-[ext_resource type="Script" path="res://TransportationChoiceScene.cs" id="1_6o5to"]
-[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://panel_theme.tres" id="1_vd6t6"]
-[ext_resource type="LabelSettings" uid="uid://5k67f0rjmf8p" path="res://title_label.tres" id="3_b6pc3"]
-[ext_resource type="Texture2D" uid="uid://xcqdn7jly4w0" path="res://assets/Ximena.png" id="4_vtcf0"]
-[ext_resource type="LabelSettings" uid="uid://di20ijtrajaq6" path="res://small_label.tres" id="5_7q3qh"]
-[ext_resource type="LabelSettings" uid="uid://dx6ypxybav3s5" path="res://text_label.tres" id="6_ohe4m"]
-[ext_resource type="Script" path="res://SceneTransitionRect.cs" id="10_tuddn"]
+[ext_resource type="Script" path="res://scripts/DestinationChoiceScene.cs" id="1_dinqt"]
+[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://themes/panel_theme.tres" id="1_kcl86"]
+[ext_resource type="LabelSettings" uid="uid://5k67f0rjmf8p" path="res://themes/title_label.tres" id="2_uep5f"]
+[ext_resource type="Texture2D" uid="uid://xcqdn7jly4w0" path="res://assets/Ximena.png" id="4_ltuob"]
+[ext_resource type="LabelSettings" uid="uid://di20ijtrajaq6" path="res://themes/small_label.tres" id="4_ym0tm"]
+[ext_resource type="LabelSettings" uid="uid://dx6ypxybav3s5" path="res://themes/text_label.tres" id="5_qacef"]
+[ext_resource type="Script" path="res://scripts/SceneTransitionRect.cs" id="6_x2ra0"]
 
 [sub_resource type="Animation" id="Animation_de0t2"]
 length = 0.001
@@ -52,7 +52,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_6o5to")
+script = ExtResource("1_dinqt")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -61,7 +61,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_vd6t6")
+theme = ExtResource("1_kcl86")
 
 [node name="PlaceName" type="Label" parent="Panel"]
 layout_mode = 1
@@ -74,7 +74,7 @@ offset_right = 140.0
 offset_bottom = 65.0
 grow_horizontal = 2
 text = "Costa Rica"
-label_settings = ExtResource("3_b6pc3")
+label_settings = ExtResource("2_uep5f")
 horizontal_alignment = 1
 
 [node name="Ximena" type="TextureRect" parent="Panel"]
@@ -88,7 +88,7 @@ offset_right = 257.0
 offset_bottom = -60.0
 grow_vertical = 0
 size_flags_vertical = 4
-texture = ExtResource("4_vtcf0")
+texture = ExtResource("4_ltuob")
 
 [node name="XimenaName" type="Label" parent="Panel/Ximena"]
 layout_mode = 1
@@ -101,26 +101,33 @@ offset_right = 48.0
 offset_bottom = -5.0
 grow_horizontal = 2
 text = "Ximena"
-label_settings = ExtResource("5_7q3qh")
+label_settings = ExtResource("4_ym0tm")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -106.0
-offset_top = 150.0
-offset_right = 474.0
-offset_bottom = 588.0
+offset_left = -83.0
+offset_top = 109.0
+offset_right = 497.0
+offset_bottom = 547.0
 grow_horizontal = 2
-theme_override_constants/separation = 50
+theme_override_constants/separation = 20
 alignment = 1
 
-[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+[node name="TransportationChoice" type="Label" parent="Panel/VBoxContainer"]
 custom_minimum_size = Vector2(300, 80)
 layout_mode = 2
-text = "Quel moyen de transport veux-tu utiliser ?"
-label_settings = ExtResource("6_ohe4m")
+text = "Moyen de transport sélectionné : "
+label_settings = ExtResource("5_qacef")
+autowrap_mode = 2
+
+[node name="AskDestination" type="Label" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 2
+text = "Où veux-tu aller ?"
+label_settings = ExtResource("5_qacef")
 autowrap_mode = 2
 
 [node name="SceneTransitionRect" type="ColorRect" parent="."]
@@ -134,7 +141,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
-script = ExtResource("10_tuddn")
+script = ExtResource("6_x2ra0")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="SceneTransitionRect"]
 libraries = {

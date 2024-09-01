@@ -1,11 +1,11 @@
 [gd_scene load_steps=17 format=3 uid="uid://du7x00v3lccjf"]
 
-[ext_resource type="Script" path="res://TransportationAnimationScene.cs" id="1_pwksl"]
-[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://panel_theme.tres" id="2_0pr6p"]
+[ext_resource type="Script" path="res://scripts/TransportationAnimationScene.cs" id="1_pwksl"]
+[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://themes/panel_theme.tres" id="2_0pr6p"]
 [ext_resource type="Texture2D" uid="uid://xcqdn7jly4w0" path="res://assets/Ximena.png" id="3_hkcks"]
 [ext_resource type="Texture2D" uid="uid://bx4u64cxmd35q" path="res://assets/Ximena_dos.png" id="4_ah6ul"]
 [ext_resource type="Texture2D" uid="uid://cbf7ps7emcao6" path="res://assets/Pied.png" id="5_2lpxj"]
-[ext_resource type="Script" path="res://SceneTransitionRect.cs" id="6_frr1j"]
+[ext_resource type="Script" path="res://scripts/SceneTransitionRect.cs" id="6_frr1j"]
 
 [sub_resource type="Animation" id="Animation_wrer2"]
 length = 0.001

@@ -53,11 +53,11 @@ public partial class TransportationAnimationScene : Control
 
 		if (string.IsNullOrEmpty(_gameState.GetCurrentCharacter().Character))
 		{
-			await _transitionPlayer.TransitionTo("res://transportation_choice.tscn");
+			await _transitionPlayer.TransitionTo("res://scenes/transportation_choice.tscn");
 		}
 		else
 		{
-			await _transitionPlayer.TransitionTo("res://place.tscn");
+			await _transitionPlayer.TransitionTo("res://scenes/place.tscn");
 		}
 	}
 }

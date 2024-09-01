@@ -35,12 +35,12 @@ public partial class TransportationChoiceScene : Control
 		Button button = new Button();
 		button.Text = gameState.FormatTransportation(transportation);
 		button.Icon = GD.Load<Texture2D>("res://assets/" + transportation + ".png");
-		button.Theme = GD.Load<Theme>("res://transportation_button_theme.tres");
+		button.Theme = GD.Load<Theme>("res://scenes/transportation_button_theme.tres");
 		button.SizeFlagsHorizontal = SizeFlags.ShrinkCenter;
 
 		button.Pressed += async () => {
 			gameState.SetTransportationType(transportation);
-			await transitionRect.TransitionTo("res://destination_choice.tscn");
+			await transitionRect.TransitionTo("res://scenes/destination_choice.tscn");
 		};
 
 		choiceContainer.AddChild(button);

@@ -39,7 +39,7 @@ public partial class DestinationChoiceScene : Control
 		Button button = new Button();
 		button.Text = connection.Indication;
 		button.Icon = GetIconFromIndication(connection.Indication);
-		button.Theme = GD.Load<Theme>("res://transportation_button_theme.tres");
+		button.Theme = GD.Load<Theme>("res://scenes/transportation_button_theme.tres");
 		button.SizeFlagsHorizontal = SizeFlags.ShrinkCenter;
 
 		button.Pressed += async () =>
@@ -48,17 +48,17 @@ public partial class DestinationChoiceScene : Control
 
 			if (transitionData.TransportationChanged)
 			{
-				await transitionRect.TransitionTo("res://transportation_animation.tscn");
+				await transitionRect.TransitionTo("res://scenes/transportation_animation.tscn");
 			}
 			else
 			{
 				if (string.IsNullOrEmpty(gameState.GetCurrentCharacter().Character))
 				{
-					await transitionRect.TransitionTo("res://transportation_choice.tscn");
+					await transitionRect.TransitionTo("res://scenes/transportation_choice.tscn");
 				}
 				else
 				{
-					await transitionRect.TransitionTo("res://place.tscn");
+					await transitionRect.TransitionTo("res://scenes/place.tscn");
 				}
 			}
 		};

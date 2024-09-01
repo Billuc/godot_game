@@ -17,7 +17,7 @@ public partial class NextButton : Button
 
 	private async void OnPressed()
 	{
-		await _transitionRect.TransitionTo("res://transportation_choice.tscn");
+		await _transitionRect.TransitionTo("res://scenes/transportation_choice.tscn");
 	}
 
 	public async Task ShowWithAnimation()
