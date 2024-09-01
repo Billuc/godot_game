@@ -24,3 +24,12 @@
 - Added an animation scene when changing transportation type
 - Created the last pngs for the buttons
 - Added the icons to the buttons
+
+## 01/09/2024
+
+- Reorganized a bit the project to work more efficiently
+- Added constraints on connections
+- Modified the DestinationChoiceScene to display a message when a constraint is met
+- I haven't tested this yet though
+- Created a class to handle TextAnimations, might create more of those
+- I discovered Custom anchor layouts which respond to my needs for a lot of things

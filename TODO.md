@@ -10,7 +10,7 @@
 - [x] Text animation
 - [x] Play an animation when changing transportation type
 - [x] Use different pngs for each character
-- [ ] Ajouter les contraintes sur les connexions
+- [x] Ajouter les contraintes sur les connexions
 - [x] Create all the pngs
 - [ ] Add possibility to change transportation type 
 
