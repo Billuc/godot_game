@@ -39,3 +39,6 @@
 - Using custom anchors to fix many position problems
 - Fixed some styling issues discovered afterwards
 - Fixed transportation animation played twice
+- Fixed image placement in Place scene
+- Fixed ConstraintLabel not showing
+- Added "Previous" button to return to transportation type selection
