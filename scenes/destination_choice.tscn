@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ybqoxuqc2md6"]
+[gd_scene load_steps=17 format=3 uid="uid://ybqoxuqc2md6"]
 
 [ext_resource type="Script" path="res://scripts/DestinationChoiceScene.cs" id="1_dinqt"]
 [ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://themes/panel_theme.tres" id="1_kcl86"]
@@ -9,6 +9,9 @@
 [ext_resource type="Script" path="res://scripts/SceneTransitionRect.cs" id="6_x2ra0"]
 [ext_resource type="Texture2D" uid="uid://ciogigwt6wkyl" path="res://assets/text_bubble.png" id="7_sv4vo"]
 [ext_resource type="Texture2D" uid="uid://yy67p1vh7wb3" path="res://assets/hide_bubble.png" id="8_0w31y"]
+[ext_resource type="Theme" uid="uid://d8xym1c3gkbf" path="res://themes/button_theme.tres" id="9_62enw"]
+[ext_resource type="Texture2D" uid="uid://cjbfisk66o03r" path="res://assets/prev.png" id="10_r0gp0"]
+[ext_resource type="Script" path="res://scripts/PrevButton.cs" id="11_0o767"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mpv8j"]
 font_color = Color(0, 0, 0, 1)
@@ -175,6 +178,17 @@ offset_bottom = -30.0
 texture_normal = ExtResource("8_0w31y")
 ignore_texture_size = true
 stretch_mode = 5
+
+[node name="PrevButton" type="Button" parent="Panel"]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 30.0
+offset_right = 182.0
+offset_bottom = 69.0
+theme = ExtResource("9_62enw")
+text = "Retour"
+icon = ExtResource("10_r0gp0")
+script = ExtResource("11_0o767")
 
 [node name="SceneTransitionRect" type="ColorRect" parent="."]
 visible = false

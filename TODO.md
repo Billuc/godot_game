@@ -6,14 +6,13 @@
 - [x] Define all the interactions
 - [x] Create a scene to select a transportation type
 - [x] Create a scene to select a destination
-- [ ] Play an animation when a new character is reached
 - [x] Text animation
 - [x] Play an animation when changing transportation type
 - [x] Use different pngs for each character
 - [x] Ajouter les contraintes sur les connexions
 - [x] Create all the pngs
-- [ ] Add possibility to change transportation type 
-- [ ] Test constraints
+- [x] Add possibility to change transportation type 
+- [x] Test constraints
 
 ## Fixes
 
@@ -26,6 +25,7 @@
 ## Optionals
 
 - [ ] Create a map
+- [ ] Play an animation when a new character is reached
 
 ## Drawings
 
