@@ -29,21 +29,20 @@ public partial class TransportationAnimationScene : Control
 		{
 			transportationImage.Texture = GD.Load<Texture2D>("res://assets/" + transportationType + ".png");
 		}
+
+		PlayAnimationAndChangeScene();
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		timeElapsed += delta;
 
-		if (timeElapsed > 0.5)
-		{
-			PlayAnimationAndChangeScene();
-		}
 	}
 
 	private async void PlayAnimationAndChangeScene()
 	{
+		await Task.Delay(500);
+
 		string transportationType = _gameState.GetTransportationTypeForAnimation();
 
 		_animPlayer.Play("enter_" + transportationType.ToLower());
