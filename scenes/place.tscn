@@ -61,14 +61,14 @@ font = ExtResource("3_viour")
 font_size = 32
 font_color = Color(0, 0, 0, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_ggkvl"]
-font = ExtResource("3_viour")
-font_size = 39
-font_color = Color(0, 0, 0, 1)
-
 [sub_resource type="LabelSettings" id="LabelSettings_yj2pu"]
 font = ExtResource("3_viour")
 font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ggkvl"]
+font = ExtResource("3_viour")
+font_size = 39
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_de0t2"]
@@ -164,22 +164,19 @@ libraries = {
 "": SubResource("AnimationLibrary_5c0j2")
 }
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+[node name="Ximena" type="TextureRect" parent="Panel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.1
 anchor_top = 0.3
-anchor_right = 0.1
+anchor_right = 0.25
 anchor_bottom = 0.9
-theme_override_constants/separation = 75
-
-[node name="Ximena" type="TextureRect" parent="Panel/HBoxContainer"]
-layout_mode = 2
+size_flags_horizontal = 2
 texture = ExtResource("4_02up1")
 expand_mode = 3
-stretch_mode = 4
+stretch_mode = 5
 
-[node name="XimenaName" type="Label" parent="Panel/HBoxContainer/Ximena"]
+[node name="XimenaName" type="Label" parent="Panel/Ximena"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -194,44 +191,20 @@ label_settings = SubResource("LabelSettings_e0x3w")
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="Char2" type="TextureRect" parent="Panel/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
+[node name="Char2" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3
+anchor_top = 0.3
+anchor_right = 0.45
+anchor_bottom = 0.9
+size_flags_horizontal = 2
+size_flags_stretch_ratio = 0.0
 texture = ExtResource("5_ejpn2")
-expand_mode = 3
+expand_mode = 4
 stretch_mode = 5
 
-[node name="SpeechBubble" type="TextureRect" parent="Panel/HBoxContainer/Char2"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 1.0
-anchor_top = 0.1
-anchor_right = 1.0
-anchor_bottom = 0.1
-offset_top = -147.0
-offset_right = 591.0
-offset_bottom = 53.0
-grow_horizontal = 0
-texture = ExtResource("6_0et3l")
-expand_mode = 5
-stretch_mode = 5
-
-[node name="DialogText" type="Label" parent="Panel/HBoxContainer/Char2/SpeechBubble"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.05
-anchor_top = 0.05
-anchor_right = 0.95
-anchor_bottom = 0.85
-offset_left = 8.0
-offset_top = 8.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "Hello"
-label_settings = SubResource("LabelSettings_ggkvl")
-autowrap_mode = 2
-
-[node name="Char2Name" type="Label" parent="Panel/HBoxContainer/Char2"]
+[node name="Char2Name" type="Label" parent="Panel/Char2"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -245,6 +218,32 @@ text = "Luc
 "
 label_settings = SubResource("LabelSettings_yj2pu")
 horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="SpeechBubble" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45
+anchor_top = 0.2
+anchor_right = 0.9
+anchor_bottom = 0.5
+grow_horizontal = 0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 6.81
+texture = ExtResource("6_0et3l")
+expand_mode = 5
+
+[node name="DialogText" type="Label" parent="Panel/SpeechBubble"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.95
+anchor_bottom = 0.85
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hello"
+label_settings = SubResource("LabelSettings_ggkvl")
 autowrap_mode = 2
 
 [node name="SceneTransitionRect" type="ColorRect" parent="."]

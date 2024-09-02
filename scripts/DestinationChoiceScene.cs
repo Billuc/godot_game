@@ -8,6 +8,7 @@ public partial class DestinationChoiceScene : Control
 	private Node choiceContainer;
 	private SceneTransitionRect transitionRect;
 	private TextAnimation textAnimation;
+	private TextureButton hideButton;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -20,6 +21,7 @@ public partial class DestinationChoiceScene : Control
 		transitionRect = GetNode<SceneTransitionRect>("/root/Control/SceneTransitionRect");
 		TextureRect textBubble = GetNode<TextureRect>("Panel/TextBubble");
 		Label textBubbleLabel = GetNode<Label>("Panel/TextBubble/Label");
+		hideButton = GetNode<TextureButton>("Panel/HideTextBubble");
 
 		Connection[] connectionOptions = gameState.GetCurrentConnections();
 
@@ -31,18 +33,22 @@ public partial class DestinationChoiceScene : Control
 			CreateOptionButton(option);
 		}
 
-		textAnimation = new TextAnimation(textBubble, textBubbleLabel);
+		textAnimation = new TextAnimation(textBubble, textBubbleLabel, 3);
 
-		textBubble.GetNode<TextureButton>("Hide").Pressed += () =>
+		hideButton.Pressed += () =>
 		{
 			textAnimation.Hide();
+			hideButton.Modulate = Color.Color8(255, 255, 255, 0);
 		};
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		textAnimation.Process(delta);
+		if (textAnimation.Process(delta))
+		{
+			hideButton.Modulate = Color.Color8(255, 255, 255, 255);
+		}
 	}
 
 	private void CreateOptionButton(Connection connection)
