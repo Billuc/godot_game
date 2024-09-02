@@ -20,9 +20,9 @@ public partial class PlaceScene : Control
 		gameState = GameState.GetInstance();
 
 		Label placeName = GetNode<Label>("Panel/PlaceName");
-		TextureRect char2Rect = GetNode<TextureRect>("Panel/VFlowContainer/Char2");
-		Label char2Name = GetNode<Label>("Panel/VFlowContainer/Char2/Char2Name");
-		DialogText = GetNode<Label>("Panel/VFlowContainer/Char2/SpeechBubble/DialogText");
+		TextureRect char2Rect = GetNode<TextureRect>("Panel/HBoxContainer/Char2");
+		Label char2Name = GetNode<Label>("Panel/HBoxContainer/Char2/Char2Name");
+		DialogText = GetNode<Label>("Panel/HBoxContainer/Char2/SpeechBubble/DialogText");
 		NextButton = GetNode<NextButton>("Panel/NextButton");
 
 		var charInfo = gameState.GetCurrentCharacter();

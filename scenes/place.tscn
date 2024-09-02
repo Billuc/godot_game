@@ -164,18 +164,6 @@ libraries = {
 "": SubResource("AnimationLibrary_5c0j2")
 }
 
-[node name="VFlowContainer" type="VFlowContainer" parent="Panel"]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 320.0
-offset_top = -468.0
-offset_right = 576.0
-offset_bottom = -60.0
-grow_vertical = 0
-alignment = 2
-
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
 layout_mode = 1
 anchors_preset = -1

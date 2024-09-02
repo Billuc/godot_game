@@ -131,6 +131,7 @@ label_settings = ExtResource("5_qacef")
 autowrap_mode = 2
 
 [node name="TextBubble" type="TextureRect" parent="Panel"]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.8
