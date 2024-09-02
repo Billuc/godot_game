@@ -19,11 +19,6 @@ font_color = Color(0, 0, 0, 1)
 shadow_size = 2
 shadow_color = Color(0, 0, 0, 0.12549)
 
-[sub_resource type="LabelSettings" id="LabelSettings_e0x3w"]
-font = ExtResource("3_viour")
-font_size = 32
-font_color = Color(0, 0, 0, 1)
-
 [sub_resource type="Animation" id="Animation_672yf"]
 length = 0.001
 tracks/0/type = "value"
@@ -60,6 +55,11 @@ _data = {
 "RESET": SubResource("Animation_672yf"),
 "show": SubResource("Animation_a7pwv")
 }
+
+[sub_resource type="LabelSettings" id="LabelSettings_e0x3w"]
+font = ExtResource("3_viour")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_ggkvl"]
 font = ExtResource("3_viour")
@@ -140,34 +140,6 @@ text = "Costa Rica"
 label_settings = SubResource("LabelSettings_orhqa")
 horizontal_alignment = 1
 
-[node name="Ximena" type="TextureRect" parent="Panel"]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 118.0
-offset_top = -408.0
-offset_right = 257.0
-offset_bottom = -60.0
-grow_vertical = 0
-size_flags_vertical = 4
-texture = ExtResource("4_02up1")
-
-[node name="XimenaName" type="Label" parent="Panel/Ximena"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -78.5
-offset_top = -83.0
-offset_right = 60.5
-offset_bottom = -5.0
-grow_horizontal = 2
-text = "Ximena"
-label_settings = SubResource("LabelSettings_e0x3w")
-horizontal_alignment = 1
-autowrap_mode = 2
-
 [node name="NextButton" type="Button" parent="Panel"]
 layout_mode = 1
 anchors_preset = 3
@@ -204,42 +176,74 @@ offset_bottom = -60.0
 grow_vertical = 0
 alignment = 2
 
-[node name="Char2" type="TextureRect" parent="Panel/VFlowContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.3
+anchor_right = 0.1
+anchor_bottom = 0.9
+theme_override_constants/separation = 75
+
+[node name="Ximena" type="TextureRect" parent="Panel/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_02up1")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="XimenaName" type="Label" parent="Panel/HBoxContainer/Ximena"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -78.5
+offset_top = -83.0
+offset_right = 60.5
+offset_bottom = -5.0
+grow_horizontal = 2
+text = "Ximena"
+label_settings = SubResource("LabelSettings_e0x3w")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Char2" type="TextureRect" parent="Panel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 4
 texture = ExtResource("5_ejpn2")
-stretch_mode = 3
+expand_mode = 3
+stretch_mode = 5
 
-[node name="SpeechBubble" type="TextureRect" parent="Panel/VFlowContainer/Char2"]
+[node name="SpeechBubble" type="TextureRect" parent="Panel/HBoxContainer/Char2"]
 layout_mode = 1
-anchors_preset = 1
+anchors_preset = -1
 anchor_left = 1.0
+anchor_top = 0.1
 anchor_right = 1.0
+anchor_bottom = 0.1
 offset_top = -147.0
 offset_right = 591.0
 offset_bottom = 53.0
 grow_horizontal = 0
 texture = ExtResource("6_0et3l")
+expand_mode = 5
+stretch_mode = 5
 
-[node name="DialogText" type="Label" parent="Panel/VFlowContainer/Char2/SpeechBubble"]
+[node name="DialogText" type="Label" parent="Panel/HBoxContainer/Char2/SpeechBubble"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -254.5
-offset_top = -77.0
-offset_right = 265.5
-offset_bottom = 67.0
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.85
+offset_left = 8.0
+offset_top = 8.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Hello"
 label_settings = SubResource("LabelSettings_ggkvl")
 autowrap_mode = 2
 
-[node name="Char2Name" type="Label" parent="Panel/VFlowContainer/Char2"]
+[node name="Char2Name" type="Label" parent="Panel/HBoxContainer/Char2"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
