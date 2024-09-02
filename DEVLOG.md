@@ -33,3 +33,9 @@
 - I haven't tested this yet though
 - Created a class to handle TextAnimations, might create more of those
 - I discovered Custom anchor layouts which respond to my needs for a lot of things
+
+## 02/09/2024
+
+- Using custom anchors to fix many position problems
+- Fixed some styling issues discovered afterwards
+- Fixed transportation animation played twice

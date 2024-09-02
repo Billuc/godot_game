@@ -13,12 +13,15 @@
 - [x] Ajouter les contraintes sur les connexions
 - [x] Create all the pngs
 - [ ] Add possibility to change transportation type 
+- [ ] Test constraints
 
 ## Fixes
 
-- [ ] The size of the characters messes up with the speech bubble
-- [ ] The transportation animation is launched twice (see progress function)
-- [ ] Animations are messed up when the window has different dimensions
+- [x] The size of the characters messes up with the speech bubble
+- [x] The transportation animation is launched twice (see progress function)
+- [x] Animations are messed up when the window has different dimensions
+- [ ] Place scene : rearrange speech bubble
+- [ ] Replace transformation animations
 
 ## Optionals
 
