@@ -42,3 +42,10 @@
 - Fixed image placement in Place scene
 - Fixed ConstraintLabel not showing
 - Added "Previous" button to return to transportation type selection
+
+## 03/09/2024
+
+- D-1
+- Replaced Transportation Change Animation
+- Fixed scene transitions
+- There is a flicker occuring between scenes, gotta investigate

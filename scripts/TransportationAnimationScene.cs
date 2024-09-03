@@ -15,10 +15,10 @@ public partial class TransportationAnimationScene : Control
 	public override void _Ready()
 	{
 		_gameState = GameState.GetInstance();
-		_animPlayer = GetNode<AnimationPlayer>("Panel/Ximena/AnimationPlayer");
+		_animPlayer = GetNode<AnimationPlayer>("Panel/Control/Ximena/AnimationPlayer");
 		_transitionPlayer = GetNode<SceneTransitionRect>("SceneTransitionRect");
 
-		TextureRect transportationImage = GetNode<TextureRect>("Panel/Transportation");
+		TextureRect transportationImage = GetNode<TextureRect>("Panel/Control/Transportation");
 		string transportationType = _gameState.GetTransportationTypeForAnimation();
 
 		if (transportationType == "Pied")

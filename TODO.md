@@ -13,6 +13,7 @@
 - [x] Create all the pngs
 - [x] Add possibility to change transportation type 
 - [x] Test constraints
+- [ ] Playtest
 
 ## Fixes
 
@@ -20,7 +21,9 @@
 - [x] The transportation animation is launched twice (see progress function)
 - [x] Animations are messed up when the window has different dimensions
 - [ ] Place scene : rearrange speech bubble
-- [ ] Replace transformation animations
+- [x] Replace transformation animations
+- [ ] Flicker on scene change
+- [ ] Fix character sizes
 
 ## Optionals
 

@@ -191,7 +191,6 @@ icon = ExtResource("10_r0gp0")
 script = ExtResource("11_0o767")
 
 [node name="SceneTransitionRect" type="ColorRect" parent="."]
-visible = false
 modulate = Color(0, 0, 0, 0)
 layout_mode = 1
 anchors_preset = 15

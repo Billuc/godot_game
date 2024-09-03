@@ -42,7 +42,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+"values": [Color(0, 0, 0, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nhqcy"]
@@ -108,7 +108,6 @@ icon = ExtResource("4_q7y88")
 script = ExtResource("5_jm5ok")
 
 [node name="SceneTransitionRect" type="ColorRect" parent="."]
-visible = false
 modulate = Color(0, 0, 0, 0)
 layout_mode = 1
 anchors_preset = 15

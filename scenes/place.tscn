@@ -247,7 +247,6 @@ label_settings = SubResource("LabelSettings_ggkvl")
 autowrap_mode = 2
 
 [node name="SceneTransitionRect" type="ColorRect" parent="."]
-visible = false
 modulate = Color(0, 0, 0, 0)
 layout_mode = 1
 anchors_preset = 15
