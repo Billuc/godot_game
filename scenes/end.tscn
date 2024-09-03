@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://oo4jpmacl1tr"]
+[gd_scene load_steps=9 format=3 uid="uid://oo4jpmacl1tr"]
 
-[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://themes/panel_theme.tres" id="1_xithb"]
-[ext_resource type="Texture2D" uid="uid://cboeqr2xqcktv" path="res://assets/girl_character.png" id="2_1kcy4"]
-[ext_resource type="Script" path="res://scripts/SceneTransitionRect.cs" id="3_ajjj1"]
+[ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://themes/panel_theme.tres" id="1_vamri"]
+[ext_resource type="Texture2D" uid="uid://xcqdn7jly4w0" path="res://assets/Ximena.png" id="2_2rxe4"]
+[ext_resource type="Texture2D" uid="uid://cua3k86ww0mkv" path="res://assets/Luc.png" id="3_j1sdr"]
+[ext_resource type="LabelSettings" uid="uid://5k67f0rjmf8p" path="res://themes/title_label.tres" id="4_0hole"]
+[ext_resource type="Script" path="res://scripts/SceneTransitionRect.cs" id="5_baelr"]
 
 [sub_resource type="Animation" id="Animation_de0t2"]
 length = 0.001
@@ -56,22 +58,46 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_xithb")
+theme = ExtResource("1_vamri")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+[node name="TextureRect" type="TextureRect" parent="Panel"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.3
+anchor_right = 0.5
+anchor_bottom = 0.7
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 10.0
+grow_horizontal = 0
 grow_vertical = 2
-alignment = 1
-
-[node name="TextureRect" type="TextureRect" parent="Panel/HBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 4
-texture = ExtResource("2_1kcy4")
+texture = ExtResource("2_2rxe4")
+expand_mode = 3
 stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.3
+anchor_right = 0.5
+anchor_bottom = 0.7
+texture = ExtResource("3_j1sdr")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="PlaceName" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.1
+anchor_right = 0.5
+anchor_bottom = 0.1
+grow_horizontal = 2
+text = "Bravo, tu as gagné !"
+label_settings = ExtResource("4_0hole")
+horizontal_alignment = 1
 
 [node name="SceneTransitionRect" type="ColorRect" parent="."]
 modulate = Color(0, 0, 0, 0)
@@ -83,7 +109,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
-script = ExtResource("3_ajjj1")
+script = ExtResource("5_baelr")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="SceneTransitionRect"]
 libraries = {
