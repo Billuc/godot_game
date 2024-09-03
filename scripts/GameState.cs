@@ -44,10 +44,10 @@ namespace FYBF
             return currentPlaceObj.Name;
         }
 
-        public (string Character, string Interaction) GetCurrentCharacter()
+        public (string Character, string Interaction, float CharacterSize) GetCurrentCharacter()
         {
             Place currentPlaceObj = AllPlaces.First(p => p.Name == CurrentPlace);
-            return (currentPlaceObj.Character, currentPlaceObj.Interaction);
+            return (currentPlaceObj.Character, currentPlaceObj.Interaction, currentPlaceObj.CharacterSize);
         }
 
         public string[] GetCurrentTransportationTypes()
@@ -133,6 +133,9 @@ namespace FYBF
 
         [JsonPropertyName("interaction")]
         public string Interaction { get; set; } = String.Empty;
+
+        [JsonPropertyName("character_size")]
+        public float CharacterSize { get; set; } = 0.6f;
     }
 
     public class Connection

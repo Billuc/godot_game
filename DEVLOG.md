@@ -49,3 +49,5 @@
 - Replaced Transportation Change Animation
 - Fixed scene transitions
 - There is a flicker occuring between scenes, gotta investigate
+- Fixed character sizes using a new property in the json to manipulate anchors
+- Added wrap on constraint label

@@ -33,7 +33,7 @@ public partial class DestinationChoiceScene : Control
 			CreateOptionButton(option);
 		}
 
-		textAnimation = new TextAnimation(textBubble, textBubbleLabel, 3);
+		textAnimation = new TextAnimation(textBubble, textBubbleLabel, 2);
 
 		hideButton.Pressed += () =>
 		{

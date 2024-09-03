@@ -40,6 +40,7 @@ public partial class PlaceScene : Control
 
 		char2Name.Text = charInfo.Character;
 		char2Rect.Texture = GD.Load<Texture2D>("res://assets/" + charInfo.Character.Replace(' ', '_') + ".png");
+		char2Rect.AnchorTop = 0.9f - charInfo.CharacterSize;
 		DialogText.Text = "";
 		DialogText.LabelSettings.FontSize = (int)(0.9 * DialogText.Size[1] / (numberOfLines + 1)); // Keep one more line in case of text wrapping
 	}

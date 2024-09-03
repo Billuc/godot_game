@@ -13,7 +13,8 @@
 - [x] Create all the pngs
 - [x] Add possibility to change transportation type 
 - [x] Test constraints
-- [ ] Playtest
+- [x] Playtest
+- [ ] Add end scene
 
 ## Fixes
 
@@ -23,7 +24,9 @@
 - [ ] Place scene : rearrange speech bubble
 - [x] Replace transformation animations
 - [ ] Flicker on scene change
-- [ ] Fix character sizes
+- [x] Fix character sizes
+- [x] Add wrap on constraint label
+- [ ] Transition scene starts wrong
 
 ## Optionals
 

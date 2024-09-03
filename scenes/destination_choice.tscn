@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://ybqoxuqc2md6"]
+[gd_scene load_steps=18 format=3 uid="uid://ybqoxuqc2md6"]
 
 [ext_resource type="Script" path="res://scripts/DestinationChoiceScene.cs" id="1_dinqt"]
 [ext_resource type="Theme" uid="uid://bkaweb64v8hqv" path="res://themes/panel_theme.tres" id="1_kcl86"]
@@ -9,11 +9,13 @@
 [ext_resource type="Script" path="res://scripts/SceneTransitionRect.cs" id="6_x2ra0"]
 [ext_resource type="Texture2D" uid="uid://ciogigwt6wkyl" path="res://assets/text_bubble.png" id="7_sv4vo"]
 [ext_resource type="Texture2D" uid="uid://yy67p1vh7wb3" path="res://assets/hide_bubble.png" id="8_0w31y"]
+[ext_resource type="FontFile" uid="uid://covlvfdvms61s" path="res://Inconsolata/InconsolataNerdFont-Regular.ttf" id="8_j6p72"]
 [ext_resource type="Theme" uid="uid://d8xym1c3gkbf" path="res://themes/button_theme.tres" id="9_62enw"]
 [ext_resource type="Texture2D" uid="uid://cjbfisk66o03r" path="res://assets/prev.png" id="10_r0gp0"]
 [ext_resource type="Script" path="res://scripts/PrevButton.cs" id="11_0o767"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mpv8j"]
+font = ExtResource("8_j6p72")
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_de0t2"]
@@ -154,14 +156,18 @@ texture = ExtResource("7_sv4vo")
 [node name="Label" type="Label" parent="Panel/TextBubble"]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 20.0
-offset_top = 15.0
-offset_right = -20.0
-offset_bottom = -15.0
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.95
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
 text = "COT COT"
 label_settings = SubResource("LabelSettings_mpv8j")
+autowrap_mode = 2
+text_overrun_behavior = 3
 
 [node name="HideTextBubble" type="TextureButton" parent="Panel"]
 modulate = Color(1, 1, 1, 0)
@@ -191,6 +197,7 @@ icon = ExtResource("10_r0gp0")
 script = ExtResource("11_0o767")
 
 [node name="SceneTransitionRect" type="ColorRect" parent="."]
+visible = false
 modulate = Color(0, 0, 0, 0)
 layout_mode = 1
 anchors_preset = 15
