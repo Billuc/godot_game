@@ -14,19 +14,19 @@
 - [x] Add possibility to change transportation type 
 - [x] Test constraints
 - [x] Playtest
-- [ ] Add end scene
+- [x] Add end scene
 
 ## Fixes
 
 - [x] The size of the characters messes up with the speech bubble
 - [x] The transportation animation is launched twice (see progress function)
 - [x] Animations are messed up when the window has different dimensions
-- [ ] Place scene : rearrange speech bubble
+- [x] Place scene : rearrange speech bubble
 - [x] Replace transformation animations
-- [ ] Flicker on scene change
+- [x] Flicker on scene change
 - [x] Fix character sizes
 - [x] Add wrap on constraint label
-- [ ] Transition scene starts wrong
+- [x] Transition scene starts wrong
 
 ## Optionals
 

@@ -4,10 +4,6 @@ using System.Threading.Tasks;
 
 public partial class SceneTransitionRect : ColorRect
 {
-	// Path to the next scene to transition to
-	[Export(PropertyHint.File, "*.tscn")]
-	public string NextScenePath { get; set; }
-
 	// Reference to the AnimationPlayer node
 	private AnimationPlayer _animPlayer;
 
@@ -17,9 +13,9 @@ public partial class SceneTransitionRect : ColorRect
 		_animPlayer.PlayBackwards("fade");
 	}
 
-	public async Task TransitionTo(string nextScene = null)
+	public async Task TransitionTo(string nextScene)
 	{
-		string sceneToLoad = nextScene ?? NextScenePath;
+		string sceneToLoad = nextScene;
 		_animPlayer.Play("fade");
 		await ToSignal(_animPlayer, "animation_finished");
 		GetTree().ChangeSceneToFile(sceneToLoad);

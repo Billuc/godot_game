@@ -51,3 +51,9 @@
 - There is a flicker occuring between scenes, gotta investigate
 - Fixed character sizes using a new property in the json to manipulate anchors
 - Added wrap on constraint label
+
+## 04/09/2024
+
+- Fixed Transpotation animation start position
+- Fixed scene transition flickering with a second black colorRect visible at first but hidden in the 1st ms
+- Project finished
